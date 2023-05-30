@@ -1,3 +1,10 @@
+/**
+ * main.js
+ * main入口文件
+ * @author Joe
+ * @date 2023/5/30 16:08
+ **/
+ 
 import Vue from 'vue'
 import App from './App.vue'
 import Vuex from 'vuex'
@@ -28,8 +35,6 @@ const router = new VueRouter(routes)
 router.beforeEach((to, from, next) => {
     window.scroll(0, 0)
     utils.storage.get('userInfo', obj => {
-        console.log(to.meta, 1111111111)
-        console.log(router.options.routes[3].path, 2222)
         if (to.meta.show && !obj.token) {
             Vue.prototype.$message({
                 'type': 'warning', 'message': '无权访问此页面，请先登录！',
