@@ -1,0 +1,140 @@
+{
+  "result": {
+    "IpInfo": [
+      {
+        "ip": "172.18.95.137",
+        "port": "50963",
+        "domain": "analytics.ietf.org.cdn.cloudflare.net",
+        "country": "China",
+        "code": "CN",
+        "alpha3": "CHN",
+        "flag": "🇨🇳"
+      },
+      {
+        "ip": "39.106.142.20",
+        "port": "80",
+        "domain": "new-sentry.gitlab.net",
+        "country": "",
+        "code": "",
+        "alpha3": "",
+        "flag": ""
+      },
+      {
+        "ip": "61.54.7.136",
+        "port": "80",
+        "domain": "kv801.prod.do.dsp.mp.microsoft.com",
+        "country": "China",
+        "code": "CN",
+        "alpha3": "CHN",
+        "flag": "🇨🇳"
+      },
+      {
+        "ip": "96.6.229.162",
+        "port": "80",
+        "domain": "evento.peugeot-anzures.com",
+        "country": "China",
+        "code": "CN",
+        "alpha3": "CHN",
+        "flag": "🇨🇳"
+      }
+    ],
+    "Http": [
+      {
+        "srcIP": "172.18.95.137",
+        "srcPort": "80",
+        "dstIP": "39.106.142.20",
+        "dstPort": "8080",
+        "chunks": [
+          {
+            "requestHeaders": "POST /fire/man/inspec/5056/B8dPLnlKfEI%2FnzODcj7J42ZqZ2ZuanZjMjNkamZqNHQ%3D HTTP/1.1\r\nHost: volcat.camine.cn\r\nAccept: */*\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCache-Control: no-cache\r\nConnection: Keep-Alive\r\nContent-Length: 572\r\nContent-Type: application/x-www-form-urlencoded\r\nPragma: no-cache\r\nUser-Agent: Mozilla/4.0\r\n\r\n",
+            "requestBodyPreview": "adtag=HjG8R5krnxMRM2SDalYN3UbUMErxa2RJn%2F%2BnwV27VtFXt13oSPb9cXapMyVJTuA8z3bzNbYbNQEy8gnJSn4HOzsaxMGfqxmBq8flvYW8teHKvtnf7MKygaQEIgTcR88tM6A%2Bl46AAzvLDQNuZXexhiguf06fkFCcgKBXanodrqi9aTNz8Wk73zvSOrXm%2B2q%2BUbedXiqjqenJkLhuRJsLdkJT90JSy3a2BSv2sA%2F%2BOsl%2B4JZ%2Fy45faCYuYvbZlDSgjrvPBeIwNc4wxwlFiC3UXWr0qr3vQ4y82jLUJqhPbK19n69xsdThdDd2mRMQGISglxm3omL6RrvniE3wxhDGUe7G0J1NE6grZWGVQhiaNqHmzvbSZMEsCZnG3cQzA5LYl4b6p7jJepOwIkr39mb63F8LDfMTPIV4Gr7eUCaZ%2Bor4D6Q3ToBVp5qGwunoX%2FREQCMyKivpXZiuXHKIzo6Ep6wcb7yCW9vbQ5fzMtN%2FxsjNTWsVbfEdAXKpw%2BTC02tpZmpnZm5qdmMyM2RqZmo0dA%3D%3D",
+            "requestBodyFile": "",
+            "responseHeaders": "",
+            "responseBodyPreview": "",
+            "responseBodyFile": ""
+          },
+          {
+            "requestHeaders": "",
+            "requestBodyPreview": "",
+            "requestBodyFile": "",
+            "responseHeaders": "HTTP/1.1 200 OK\r\nContent-Length: 2\r\nAccess-Control-Allow-Methods: *\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-transform\r\nCache-Control: no-siteapp\r\nConnection: keep-alive\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 10 May 2023 13:33:15 GMT\r\nServer: nginx/1.18.0 (Ubuntu)\r\n\r\n",
+            "responseBodyPreview": "ok",
+            "responseBodyFile": ""
+          }
+        ]
+      },
+      {
+        "srcIP": "172.18.95.137",
+        "srcPort": "50964",
+        "dstIP": "39.106.142.20",
+        "dstPort": "80",
+        "chunks": [
+          {
+            "requestHeaders": "POST /fire/man/inspec/5056/B8dPLnlKfEI%2FnzODcj7J42ZqZ2ZuanZjMjNkamZqNHQ%3D HTTP/1.1\r\nHost: volcat.camine.cn\r\nAccept: */*\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCache-Control: no-cache\r\nConnection: Keep-Alive\r\nContent-Length: 526\r\nContent-Type: application/x-www-form-urlencoded\r\nPragma: no-cache\r\nUser-Agent: Mozilla/4.0\r\n\r\n",
+            "requestBodyPreview": "adtag=HjG8R5krnxMRM2SDalYN3UbUMErxa2RJn%2F%2BnwV27VtFXt13oSPb9cXapMyVJTuA8z3bzNbYbNQEy8gnJSn4HOzsaxMGfqxmBq8flvYW8teHKvtnf7MKygaQEIgTcR88tM6A%2Bl46AAzvLDQNuZXexhiguf06fkFCcgKBXanodrqi9aTNz8Wk73zvSOrXm%2B2q%2BUbedXiqjqenJkLhuRJsLdkJT90JSy3a2BSv2sA%2F%2BOsl%2B4JZ%2Fy45faCYuYvbZlDSgjrvPBeIwNc4wxwlFiC3UXWr0qr3vQ4y82jLUJqhPbK1a3TWS9aYYK%2BbWXC%2BiRr2TIqiCDwX%2BA0XbseykpYajMo08xspx81RIlMM9qvP15LEkYrkMQGzg7fKhjbnMXGyvA6lSWCkSpiPGlX99qmsp34rRFbkwY73NMFcrIEmZLsb3yKXqTpWt1QFcDMQOd9fFaK1PDVTnjXfSFXH%2FIwKsAWZqZ2ZuanZjMjNkamZqNHQ%3D",
+            "requestBodyFile": "",
+            "responseHeaders": "",
+            "responseBodyPreview": "",
+            "responseBodyFile": ""
+          },
+          {
+            "requestHeaders": "",
+            "requestBodyPreview": "",
+            "requestBodyFile": "",
+            "responseHeaders": "HTTP/1.1 200 OK\r\nContent-Length: 2\r\nAccess-Control-Allow-Methods: *\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: no-transform\r\nCache-Control: no-siteapp\r\nConnection: keep-alive\r\nContent-Type: text/html; charset=utf-8\r\nDate: Wed, 10 May 2023 13:33:15 GMT\r\nServer: nginx/1.18.0 (Ubuntu)\r\n\r\n",
+            "responseBodyPreview": "ok",
+            "responseBodyFile": ""
+          }
+        ]
+      },
+      {
+        "srcIP": "172.18.95.137",
+        "srcPort": "50968",
+        "dstIP": "61.54.7.136",
+        "dstPort": "80",
+        "chunks": [
+          {
+            "requestHeaders": "GET /cityjson HTTP/1.1\r\nHost: pv.sohu.com\r\nAccept: */*\r\nAccept-Language: zh-CN,zh;q=0.9\r\nCache-Control: no-cache\r\nConnection: Keep-Alive\r\nUser-Agent: Mozilla/4.0\r\n\r\n",
+            "requestBodyPreview": "",
+            "requestBodyFile": "",
+            "responseHeaders": "",
+            "responseBodyPreview": "",
+            "responseBodyFile": ""
+          },
+          {
+            "requestHeaders": "",
+            "requestBodyPreview": "",
+            "requestBodyFile": "",
+            "responseHeaders": "HTTP/1.1 200 OK\r\nContent-Length: 72\r\nConnection: keep-alive\r\nContent-Type: application/json;charset=utf-8\r\nDate: Wed, 10 May 2023 13:33:17 GMT\r\nServer: D0\r\nX-Cache-Lookup: Return Directly\r\nX-Nws-Log-Uuid: 6191528533551554844\r\n\r\n",
+            "responseBodyPreview": "var returnCitySN = {\"cip\": \"127.0.0.1\", \"cid\": \"00\", \"cname\": \"未知\"};",
+            "responseBodyFile": "4044f02a-933a-4266-9bbb-0c78ce0233e5.json"
+          }
+        ]
+      },
+      {
+        "srcIP": "172.18.95.137",
+        "srcPort": "50984",
+        "dstIP": "96.6.229.16",
+        "dstPort": "80",
+        "chunks": [
+          {
+            "requestHeaders": "GET /zh-CN/livetile/preinstall?region=CN\u0026appid=C98EA5B0842DBB9405BBF071E1DA76512D21FE36\u0026FORM=Threshold HTTP/1.1\r\nHost: tile-service.weather.microsoft.com\r\nConnection: Keep-Alive\r\nUser-Agent: Microsoft-WNS/10.0\r\n\r\n",
+            "requestBodyPreview": "",
+            "requestBodyFile": "",
+            "responseHeaders": "",
+            "responseBodyPreview": "",
+            "responseBodyFile": ""
+          },
+          {
+            "requestHeaders": "",
+            "requestBodyPreview": "",
+            "requestBodyFile": "",
+            "responseHeaders": "HTTP/1.1 200 OK\r\nContent-Length: 4239\r\nAccess-Control-Allow-Origin: *\r\nCache-Control: public, max-age=836\r\nConnection: keep-alive\r\nContent-Type: text/xml; charset=utf-8\r\nDate: Wed, 10 May 2023 13:41:15 GMT\r\nServer: Microsoft-IIS/10.0\r\nX-Activityid: d1f81b1c-99e7-4159-9ae5-cfaaa9570031\r\nX-Aspnet-Version: 4.0.30319\r\nX-Powered-By: ASP.NET\r\n\r\n",
+            "responseBodyPreview": "\u003c?xml version=\"1.0\" encoding=\"utf-8\"?\u003e\u003ctile\u003e\u003cvisual version=\"2\" Branding=\"name\" baseUri=\"http://blob.weather.microsoft.com/static/mws-new/\" hint-lockDetailedStatus1=\"北京   19°\" hint-lockDetailedStatus2=\"\" hint-lockDetailedStatus3=\"\"\u003e\u003cbinding template=\"TileSmall\" hint-textStacking=\"center\" hint-overlay=\"30\" branding=\"none\"\u003e\u003cimage placement=\"background\" src=\"WeatherImages/210x173/4.jpg?a\" /\u003e\u003ctext hint-style=\"caption\" hint-align=\"center\"\u003e北京\u003c/text\u003e\u003ctext hint-style=\"base\" hint-align=\"center\"\u003e19°\u003c/text\u003e\u003c/binding\u003e\u003cbinding template=\"TileMedium\" DisplayName=\"北京\" hint-overlay=\"30\"\u003e\u003cimage placement=\"background\" src=\"WeatherImages/210x173/4.jpg?a\" /\u003e\u003ctext\u003eMostly cloudy\u003c/text\u003e\u003cimage hint-removeMargin=\"True\" hint-align=\"center\" src=\"ms-appx:///Assets/AppTiles/Spacer/6px.png\" /\u003e\u003cgroup\u003e\u003csubgroup hint-weight=\"70\" hint-textStacking=\"center\"\u003e\u003cimage hint-removeMargin=\"True\" hint-align=\"center\" src=\"ms-appx:///Assets/AppTiles/Spacer/2px.png\" /\u003e\u003ctext hint-style=\"titleNumeral\"\u003e19°\u003c/text\u003e\u003c/subgr",
+            "responseBodyFile": "c9f30b79-9927-4885-b4a0-90c40ca662af.xml"
+          }
+        ]
+      }
+    ]
+  }
+}

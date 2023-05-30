@@ -1,0 +1,97 @@
+{
+    "name": "vms",
+    "version": "1.0.1",
+    "author": "Joe",
+    "description": "vue manage system",
+    "private": true,
+    "scripts": {
+        "start": "concurrently -k \"npm run server\" \"npm run dev\"",
+        "server": "nodemon --delay 2000ms -w app.js -w server serverEntry.js",
+        "dev": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint --fix"
+    },
+    "dependencies": {
+        "@antv/g6": "^4.8.13",
+        "axios": "^0.21.1",
+        "babel-polyfill": "^6.26.0",
+        "bcryptjs": "^2.4.0",
+        "cpu-stat": "^2.0.1",
+        "crypto-js": "^4.0.0",
+        "csv-parse": "^4.8.8",
+        "default-passive-events": "^2.0.0",
+        "diskusage-ng": "^1.0.1",
+        "echarts": "^5.0.2",
+        "elasticsearch": "^16.7.2",
+        "element-ui": "^2.15.5",
+        "file-saver": "^2.0.5",
+        "highlight.js": "^11.8.0",
+        "json2csv": "^5.0.5",
+        "koa": "^2.5.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-json": "^2.0.2",
+        "koa-jwt": "^4.0.0",
+        "koa-log4": "^2.3.2",
+        "koa-multer": "^1.0.2",
+        "koa-router": "^10.0.0",
+        "koa-static": "^5.0.0",
+        "koa2-history-api-fallback": "^0.1.0",
+        "lodash": "^4.17.20",
+        "moment": "^2.27.0",
+        "node-schedule": "^2.0.0",
+        "nodemailer": "^6.5.0",
+        "sql2es": "0.0.6",
+        "sqlite3": "^5.0.0",
+        "vue": "^2.6.12",
+        "vue-print-nb": "^1.7.5",
+        "vue-quill-editor": "^3.0.6",
+        "vue-router": "^3.0.6",
+        "vue-template-compiler": "^2.6.12",
+        "vuex": "^3.6.2",
+        "xlsx": "^0.16.9"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.3.1",
+        "@vue/cli-plugin-eslint": "^4.3.1",
+        "@vue/cli-service": "^4.3.1",
+        "@vue/eslint-config-standard": "^3.0.4",
+        "babel-core": "^6.26.3",
+        "babel-preset-env": "^1.7.0",
+        "concurrently": "^6.0.0",
+        "core-js": "^3.10.2",
+        "http-proxy-middleware": "^1.0.6",
+        "node-sass": "^4.14.1",
+        "nodemon": "^2.0.4",
+        "sass-loader": "^8.0.2",
+        "script-ext-html-webpack-plugin": "^2.1.5",
+        "script-loader": "^0.7.2",
+        "svg-sprite-loader": "^6.0.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/standard"
+        ],
+        "rules": {
+            "no-console": 0,
+            "space-before-function-paren": 0
+        },
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}

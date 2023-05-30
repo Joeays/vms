@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "p-icon"; /* Project id 2469579 */
+  src: url('iconfont.woff2?t=1634094855858') format('woff2'),
+       url('iconfont.woff?t=1634094855858') format('woff'),
+       url('iconfont.ttf?t=1634094855858') format('truetype');
+}
+
+.p-icon {
+  font-family: "p-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.p-icon-higher:before {
+  content: "\e633";
+}
+
+.p-icon-quicks:before {
+  content: "\e638";
+}
+
+.p-icon-quick:before {
+  content: "\e628";
+}
+
+.p-icon-high:before {
+  content: "\e6f0";
+}
+
+.p-icon-filter:before {
+  content: "\e73b";
+}
+
+.p-icon-library:before {
+  content: "\e693";
+}
+
+.p-icon-querying:before {
+  content: "\e60b";
+}
+
+.p-icon-f-email:before {
+  content: "\e65e";
+}
+
+.p-icon-f-user:before {
+  content: "\e6e1";
+}
+
+.p-icon-f-type:before {
+  content: "\e666";
+}
+
+.p-icon-f-pwd:before {
+  content: "\ea41";
+}
+
+.p-icon-network:before {
+  content: "\e64a";
+}
+
+.p-icon-type:before {
+  content: "\e668";
+}
+
+.p-icon-log:before {
+  content: "\e600";
+}
+
+.p-icon-line:before {
+  content: "\e6a3";
+}
+
+.p-icon-active:before {
+  content: "\e714";
+}
+
+.p-icon-channel:before {
+  content: "\e73c";
+}
+
+.p-icon-stat:before {
+  content: "\e60a";
+}
+
+.p-icon-bar:before {
+  content: "\e663";
+}
+
+.p-icon-process:before {
+  content: "\e6a7";
+}
+
+.p-icon-system:before {
+  content: "\e606";
+}
+
+.p-icon-rule:before {
+  content: "\e6eb";
+}
+
+.p-icon-switches:before {
+  content: "\e63d";
+}
+
+.p-icon-alarm:before {
+  content: "\e649";
+}
+
+.p-icon-control:before {
+  content: "\e6b3";
+}
+
+.p-icon-user:before {
+  content: "\e667";
+}
+
+.p-icon-access:before {
+  content: "\e698";
+}
+
+.p-icon-output:before {
+  content: "\e699";
+}
+
+.p-icon-device:before {
+  content: "\e609";
+}
+
