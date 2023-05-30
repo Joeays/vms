@@ -9,8 +9,8 @@ import * as ECharts from 'echarts'
 import 'default-passive-events'
 import 'babel-polyfill'
 import utils from './utils'
-import store from './utils/store'
-import routes from './router/index'
+import store from './store'
+import routes from './router'
 import './assets/images/icons'
 import Highlight from './components/highlight'
 
@@ -28,15 +28,13 @@ const router = new VueRouter(routes)
 router.beforeEach((to, from, next) => {
     window.scroll(0, 0)
     utils.storage.get('userInfo', obj => {
-        if (to.meta.verify && !obj.token) {
+        console.log(to.meta, 1111111111)
+        console.log(router.options.routes[3].path, 2222)
+        if (to.meta.show && !obj.token) {
             Vue.prototype.$message({
                 'type': 'warning', 'message': '无权访问此页面，请先登录！',
             })
-            next({path: router.options.routes[3].path, query: {url: to.fullPath}})
-        } else if (to.meta.grade && to.meta.grade < obj.userInfo.user_type) {
-            next({path: router.options.routes[1].path})
-        } else if (to.path === router.options.routes[3].path && obj.token) {
-            next({path: router.options.routes[4].redirect})
+            next({path: '/login', query: {url: to.fullPath}})
         } else {
             next()
         }
