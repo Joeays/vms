@@ -14,15 +14,25 @@
                      :default-active="main.activeRouter"
                      class="el-menu-vertical-demo">
                 <template v-for="item in getMenuData">
-                    <el-menu-item v-for="sub in item.children"
-                                  :key="sub.path"
-                                  :index="sub.path"
-                                  v-if="sub.meta.show">
+                    <el-submenu :key="item.path"
+                                :index="item.path"
+                                v-if="!item.hidden"
+                                popper-class="main-collapse-submenu">
                         <template slot="title">
-                            <svg-icon :icon-class="sub.meta.icon"/>
-                            <span slot="title">{{ sub.meta.title }}</span>
+                            <svg-icon :icon-class="item.meta.icon"/>
+                            <span slot="title">{{ item.meta.title }}</span>
                         </template>
-                    </el-menu-item>
+                        <el-menu-item v-for="sub in item.children"
+                                      :key="sub.path"
+                                      :index="item.path + '/' + sub.path"
+                                      v-if="sub.meta.show"
+                                      :disabled="sub.meta.disabled">
+                            <template slot="title">
+                                <svg-icon :icon-class="sub.meta.icon"/>
+                                <span slot="title">{{ sub.meta.title }}</span>
+                            </template>
+                        </el-menu-item>
+                    </el-submenu>
                 </template>
             </el-menu>
         </el-aside>

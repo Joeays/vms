@@ -4,6 +4,7 @@
  * @date 2021/3/22 15:51
  **/
 import Home from '@/views/Home.vue'
+import sysRouter from './modules/sysRouter'
 
 export default {
     mode: 'history',
@@ -27,13 +28,13 @@ export default {
         },
         {
             path: '',
-            redirect: '/http',
+            redirect: '/sys',
             hidden: true,
             component: Home,
         },
         {
             path: '/index',
-            redirect: '/http',
+            redirect: '/sys',
             hidden: true,
             component: Home,
         },
@@ -45,39 +46,6 @@ export default {
             hidden: true,
             component: (resolve) => require(['@/views/Login.vue'], resolve)
         },
-        {
-            path: '/http',
-            redirect: '/http',
-            component: Home,
-            children: [
-                {
-                    path: '/http',
-                    meta: {
-                        title: 'HTTP',
-                        icon: 'Laptop',
-                        show: true,
-                    },
-                    component: (resolve) => require(['@/views/http/index.vue'], resolve)
-                },
-                {
-                    path: '/arp',
-                    meta: {
-                        title: 'ARP',
-                        icon: 'random',
-                        show: true,
-                    },
-                    component: (resolve) => require(['@/views/arp/index.vue'], resolve)
-                },
-                {
-                    path: '/dns',
-                    meta: {
-                        title: 'DNS',
-                        icon: 'random',
-                        show: true,
-                    },
-                    component: (resolve) => require(['@/views/dns/index.vue'], resolve)
-                }
-            ]
-        },
+        sysRouter
     ]
 }
