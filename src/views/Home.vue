@@ -6,7 +6,7 @@
                     <i :class="'el-icon-s-'+(main.isCollapse?'unfold':'fold')" @click="handleCollapseMenu"></i>
                 </div>
                 <div class="title-logo">
-                    <span><i class="el-icon-s-home"></i> {{ main.webName }}</span>
+                    <span><i class="el-icon-s-home"></i>{{ main.webName.toUpperCase() }}</span>
                 </div>
             </div>
             <el-menu :router="true"

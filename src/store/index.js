@@ -10,6 +10,19 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 // 全局缓存
 export default new Vuex.Store({
+    modules: {
+        cities: {
+            namespaced: true,
+            state: {
+                cityName: '北京'
+            },
+            mutations: {
+                cityFun(state) {
+                    state.cityName = '上海'
+                }
+            }
+        },
+    },
     state: {
         data: {},
         temp: {
@@ -42,6 +55,10 @@ export default new Vuex.Store({
         },
         set_userInfo_keyValue: ({commit}, obj) => {
             commit('SET_USER_KEY_VALUE', obj)
+        },
+        asyncAdd(num) {
+            console.log(num, 'actions num')
+            num.commit('reduce')
         }
     }
 })

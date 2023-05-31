@@ -1,8 +1,8 @@
 <template>
     <div class="main-login h100">
         <el-row class="login-container">
-            <div class="login-logo"><span>{{ webName }}</span></div>
-            <el-form :model="data" :rules="rule_data" ref="loginForm">
+            <div class="login-logo"><span>{{ webName.toUpperCase() }}</span></div>
+            <el-form :model="data" :rules="rule_data" ref="loginForm" size="medium">
                 <el-form-item prop="user_name">
                     <el-input type="text"
                               placeholder="账号"
@@ -27,7 +27,8 @@
                                  @click="handleRegPopup('register')">
                             注册
                         </el-link>
-                        <el-link type="primary" :underline="false" @click="handleRegPopup('retrieve')">忘记密码</el-link>
+                        <el-link type="primary" :underline="false" @click="handleRegPopup('retrieve')">忘记密码
+                        </el-link>
                     </el-row>
                 </el-form-item>
                 <el-form-item>

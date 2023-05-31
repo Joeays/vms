@@ -5,6 +5,7 @@
  **/
 import Home from '@/views/Home.vue'
 import sysRouter from './modules/sysRouter'
+import confRouter from "./modules/confRouter"
 
 export default {
     mode: 'history',
@@ -46,6 +47,7 @@ export default {
             hidden: true,
             component: (resolve) => require(['@/views/Login.vue'], resolve)
         },
-        sysRouter
+        sysRouter,
+        confRouter
     ]
 }

@@ -1,7 +1,7 @@
 const sysRouter = {
     path: '/sys',
     meta: {
-        title: 'SYS',
+        title: 'SYSTEM',
         icon: 'system',
         show: true,
     },

@@ -2,9 +2,9 @@
  * main.js
  * main入口文件
  * @author Joe
- * @date 2023/5/30 16:08
+ * @date 2023/5/30 16:16
  **/
- 
+
 import Vue from 'vue'
 import App from './App.vue'
 import Vuex from 'vuex'
