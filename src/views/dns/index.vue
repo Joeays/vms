@@ -6,6 +6,7 @@
         <el-button @click="addCount1" icon="el-icon-plus"></el-button>
         <el-button @click="removeCount" icon="el-icon-minus"></el-button>
         <el-button @click="btn" icon="el-icon-s-promotion"></el-button>
+        <el-button @click="btn2" icon="el-icon-s-promotion"></el-button>
     </div>
 </template>
 
@@ -13,18 +14,37 @@
 import {mapMutations, mapState} from "vuex";
 
 export default {
-    name: "DNS",
+    name: "dns",
+    data() {
+        return {
+            obj: {user: 'joe', age: 17}
+        }
+    },
     computed: {
-        ...mapState(['temp','cities'])
+        ...mapState(['temp', 'cities'])
+    },
+    mounted() {
+        console.log(this.obj)
     },
     methods: {
-        ...mapMutations(['addCount', 'reduce', 'SET_USER_KEY_VALUE', 'SET_USER_INFO','cities/cityFun']),
-        btn(){
+        ...mapMutations(['addCount', 'reduce', 'SET_USER_KEY_VALUE', 'SET_USER_INFO', 'cities/cityFun']),
+        btn() {
             // console.log(this.$store.state["cities/cityName"])
             console.log(this.$store.state.cities.cityName)
             console.log(this.cities.cityName)
             // this['cities/cityFun']()
             this.$store.commit('cities/cityFun')
+        },
+        btn2() {
+            let p1 = {}
+            console.log(p1)
+            Object.defineProperty(p1, 'name', {
+                writable: true,
+                enumerable:false,
+                value: 10
+            })
+            p1.name = 1999
+            console.log(p1)
         },
         addCount1() {
             this.$store.commit('addCount', 1)

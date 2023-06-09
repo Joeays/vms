@@ -37,7 +37,7 @@
 import print from 'vue-print-nb'
 
 export default {
-    name: "ARP",
+    name: "arp",
     directives: {
         print
     },

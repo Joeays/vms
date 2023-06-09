@@ -1,17 +1,17 @@
 const sysRouter = {
     path: '/sys',
     meta: {
-        title: 'SYSTEM',
+        title: 'system',
         icon: 'system',
         show: true,
     },
-    component: (resolve) => require(['@/views/Home.vue'], resolve),
+    component: (resolve) => require(['@/views/home.vue'], resolve),
     redirect: '/sys/http',
     children: [
         {
             path: 'http',
             meta: {
-                title: 'HTTP',
+                title: 'http',
                 icon: 'Laptop',
                 show: true,
             },
@@ -20,7 +20,7 @@ const sysRouter = {
         {
             path: 'arp',
             meta: {
-                title: 'ARP',
+                title: 'arp',
                 icon: 'random',
                 show: true,
             },
@@ -29,7 +29,7 @@ const sysRouter = {
         {
             path: 'dns',
             meta: {
-                title: 'DNS',
+                title: 'dns',
                 icon: 'database',
                 show: true,
             },

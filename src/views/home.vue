@@ -46,7 +46,7 @@
                 </el-tooltip>
                 <div class="user-info">
                     <dl>
-                        <dt title="更新头像" @click="handleAvatarPopup"></dt>
+                        <dt title="更新头像" :style="{ backgroundColor: stringToColor(main.userInfo.user_name),color:'#fff' }" @click="handleAvatarPopup"></dt>
                         <dd>昵称：{{ main.userInfo.user_name }}</dd>
                         <dd>{{ main.userInfo.user_type | typeFilter }}</dd>
                     </dl>
@@ -158,7 +158,7 @@ const doc = {
     ]
 }
 export default {
-    name: 'Home',
+    name: 'home',
     data() {
         let that = this
         return {
@@ -296,9 +296,6 @@ export default {
                 let name = v.user_name.replace(/[a-z]+/g, '')
                 name = name ? name.slice(0, 1) : v.user_name.slice(0, 2)
                 Array.from(dom).forEach(d => {
-                    d.removeAttribute('style')
-                    d.style.backgroundColor = '#409EFF'
-                    d.style.color = '#fff'
                     if (v.user_pic) {
                         d.style.backgroundImage = 'url(' + v.user_pic + ')'
                         d.style.textContent = ''
@@ -328,6 +325,14 @@ export default {
         handleAvatarPopup() {
             this.main.upUser.visible = true
             this.$refs.picFormRef && this.$refs.picFormRef.resetFields()
+        },
+        stringToColor(str) {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            let color = Math.abs(hash).toString(16).substring(0, 6);
+            return '#' + '0'.repeat(6 - color.length) + color;
         },
         /**
          * 处理上传头像

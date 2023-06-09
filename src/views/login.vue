@@ -91,7 +91,7 @@ import '@/assets/style/main.scss';
 import utils from '@/utils';
 
 export default {
-    name: 'Login',
+    name: 'login',
     data() {
         const that = this
         return {

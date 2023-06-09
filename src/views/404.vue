@@ -28,7 +28,7 @@
 
 <script>
 export default {
-    name: 'Page404',
+    name: 'page404',
     computed: {
         message() {
             return '抱歉，您访问的页面出错啦'

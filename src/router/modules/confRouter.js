@@ -1,12 +1,31 @@
 const confRouter = {
     path: '/conf',
     meta: {
-        title: 'CONFIG',
+        title: 'config',
         icon: 'config',
         show: true,
     },
-    component: (resolve) => require(['@/views/Home.vue'], resolve),
-    redirect: '/conf/http',
-    children: []
+    component: (resolve) => require(['@/views/home.vue'], resolve),
+    redirect: '/conf/event',
+    children: [
+        {
+            path: 'mixin',
+            meta: {
+                title: 'mixin',
+                icon: 'Laptop',
+                show: true,
+            },
+            component: (resolve) => require(['@/views/mixin/index.vue'], resolve)
+        },
+        {
+            path: 'event',
+            meta: {
+                title: 'event',
+                icon: 'Laptop',
+                show: true,
+            },
+            component: (resolve) => require(['@/views/event/index.vue'], resolve)
+        },
+    ]
 }
 export default confRouter

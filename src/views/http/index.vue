@@ -79,7 +79,7 @@ import utils from '@/utils';
 import FileSaver from "file-saver"
 
 export default {
-    name: "HTTP",
+    name: "http",
     data() {
         return {
             httpData: {},

@@ -42,6 +42,7 @@
         "nodemailer": "^6.5.0",
         "sql2es": "0.0.6",
         "sqlite3": "^5.0.0",
+        "tinify": "^1.7.1",
         "vue": "^2.6.12",
         "vue-print-nb": "^1.7.5",
         "vue-quill-editor": "^3.0.6",

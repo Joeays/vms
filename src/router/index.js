@@ -3,7 +3,6 @@
  * @author Joe
  * @date 2021/3/22 15:51
  **/
-import Home from '@/views/Home.vue'
 import sysRouter from './modules/sysRouter'
 import confRouter from "./modules/confRouter"
 
@@ -29,15 +28,15 @@ export default {
         },
         {
             path: '',
-            redirect: '/sys',
+            redirect: '/conf',
             hidden: true,
-            component: Home,
+            component: (resolve) => require(['@/views/home.vue'], resolve),
         },
         {
             path: '/index',
-            redirect: '/sys',
+            redirect: '/conf',
             hidden: true,
-            component: Home,
+            component: (resolve) => require(['@/views/home.vue'], resolve),
         },
         {
             path: '/login',
@@ -45,7 +44,7 @@ export default {
                 title: '登录'
             },
             hidden: true,
-            component: (resolve) => require(['@/views/Login.vue'], resolve)
+            component: (resolve) => require(['@/views/login.vue'], resolve)
         },
         sysRouter,
         confRouter
