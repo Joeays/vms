@@ -9,6 +9,7 @@
                 <button @click.stop="htmlBtn">html标签按钮</button>
             </p>
         </div>
+        <el-divider/>
         <div class="father">
             <div class="son">我是垂直居中的div</div>
         </div>
@@ -21,17 +22,25 @@
             <div></div>
         </div>
         <el-button @click="handleRequests">axios</el-button>
+        <el-divider/>
+        <p>{{ tempData }}</p>
+        <p>{{ newData }}</p>
+        <el-button @click="handlePush">浅拷贝</el-button>
+        <button @click="handleJsonp">jsonp</button>
     </div>
 </template>
 
 <script>
 import axios from 'axios'
+import {funJsonp} from '@/components/temp/jsonp'
 
 export default {
     name: "event",
     data() {
         return {
-            obj: '111'
+            obj: '111',
+            tempData: [232, 4234, 5345, 45354, 3654, 6456, 546546, 454],
+            newData: [999, 898]
         }
     },
     mounted() {
@@ -44,15 +53,37 @@ export default {
         // } else {
         //     console.log(false)
         // }
-
-        console.log(typeof Symbol())
-        console.log(JSON.stringify([]) === '[]')
-        console.log([] instanceof Array)
+        // console.log(this.tempData.push(1, 432424))
+        // console.log(this.tempData.pop())
+        // console.log(this.tempData.unshift(888, 666))
+        // console.log(this.tempData.shift())
+        // console.log(this.tempData.sort())
+        // console.log(this.tempData.reverse())
+        this.newData = this.newData.concat(this.tempData)
     },
     methods: {
-        handleRequests() {
+        handleJsonp() {
+            funJsonp(10)
+        },
+        async clickFun() {
+            await this.clickParent().then(() => {
+
+            })
+        },
+        handlePush() {
+            this.tempData.push(555, 3333)
+            console.log(this.newData)
+        },
+        async handleRequests() {
             var a = 'a' //可以重复声明
             let c = 'c'
+            let obj = {}
+            let obj2 = {}
+            if (obj instanceof obj2) {
+                console.log(1)
+            } else {
+                console.log(2)
+            }
             axios.post('/postAxios', {
                 name: '小美post'
             }).then(res => {
@@ -156,16 +187,18 @@ export default {
 }*/
 /*6.表格布局（父元素设置，宽高未知）（兼容性较好）*/
 .father {
-    display:table-cell;
+    display: table-cell;
     text-align: center;
     vertical-align: middle;
     width: 500px;
     height: 500px;
     background-color: red;
 }
+
 .son {
     display: inline-block;
 }
+
 /*1.float布局*/
 /*.left {
     width: 200px;
