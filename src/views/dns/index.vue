@@ -25,6 +25,18 @@ export default {
     },
     mounted() {
         console.log(this.obj)
+        var a = {}
+        Object.defineProperty(a, "b", {
+            set: function (newValue) {
+                console.log("赋值是:" + newValue)
+            },
+            get: function () {
+                console.log("取值:")
+                return 22 //注意这里，我硬编码返回2
+            }
+        });
+        a.b = 1; //赋值是: 1
+        console.log(a.b);   //取值  2
     },
     methods: {
         ...mapMutations(['addCount', 'reduce', 'SET_USER_KEY_VALUE', 'SET_USER_INFO', 'cities/cityFun']),
@@ -40,7 +52,7 @@ export default {
             console.log(p1)
             Object.defineProperty(p1, 'name', {
                 writable: true,
-                enumerable:false,
+                enumerable: false,
                 value: 10
             })
             p1.name = 1999
