@@ -26,6 +26,15 @@ const confRouter = {
             },
             component: (resolve) => require(['@/views/event/index.vue'], resolve)
         },
+        {
+            path: 'table',
+            meta: {
+                title: 'table',
+                icon: 'Laptop',
+                show: true,
+            },
+            component: (resolve) => require(['@/views/table/index.vue'], resolve)
+        },
     ]
 }
 export default confRouter

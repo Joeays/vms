@@ -2,7 +2,7 @@
 const CryptoJS = require('crypto-js')
 
 export default {
-    web_name: 'vms',
+    web_name: '旅服监测系统',
     web_domain: 'http://localhost:3001', // 附件地址
     static_web_domain: 'http://localhost:8080', //附件访问地址：'http://10.250.101.30:8081'
     static_server_port: 8080,
